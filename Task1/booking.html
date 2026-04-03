@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Booking</title>
+<link rel="stylesheet" href="auth.css">
+</head>
+<body>
+<!-- <h2>Book Vehicle</h2>
+
+<input type="text" id="name" placeholder="Your Name"><br><br>
+
+<select id="vehicle">
+<option>Bike</option>
+<option>Scooty</option>
+<option>Car</option>
+</select><br><br>
+
+<label>Start Date:</label>
+<input type="date" id="start"><br><br>
+
+<label>End Date:</label>
+<input type="date" id="end"><br><br>
+
+<button onclick="book()">Confirm Booking</button> -->
+
+<div class="container">
+    <h2>Book Vehicle</h2>
+
+    <input type="text" id="name" placeholder="Your Name">
+
+    <select id="vehicle">
+        <option>Bike</option>
+        <option>Scooty</option>
+        <option>Car</option>
+    </select>
+
+    <label>Start Date</label>
+    <input type="date" id="start">
+
+    <label>End Date</label>
+    <input type="date" id="end">
+
+    <button onclick="book()">Confirm Booking</button>
+</div>
+
+<script>
+function book(){
+ let name=document.getElementById('name').value;
+ let vehicle=document.getElementById('vehicle').value;
+ let start=document.getElementById('start').value;
+ let end=document.getElementById('end').value;
+
+ let booking={name,vehicle,start,end};
+
+ let data=JSON.parse(localStorage.getItem('bookings'))||[];
+ data.push(booking);
+ localStorage.setItem('bookings', JSON.stringify(data));
+
+ alert('Booking Saved!');
+}
+</script>
+</body>
+</html>
