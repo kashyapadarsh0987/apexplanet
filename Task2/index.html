@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Task 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🚀 Advanced Task 2 Project</h1>
+</header>
+
+<div class="container">
+
+    <!-- CONTACT FORM -->
+    <div class="card">
+        <h2>Contact Form</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Enter Name">
+            <input type="email" id="email" placeholder="Enter Email">
+            <textarea id="message" placeholder="Enter Message"></textarea>
+            <button type="submit">Submit</button>
+            <p id="formMsg"></p>
+        </form>
+    </div>
+
+    <!-- TODO LIST -->
+    <div class="card">
+        <h2>Smart To-Do List</h2>
+        <input type="text" id="taskInput" placeholder="Add Task">
+        <button onclick="addTask()">Add</button>
+        <ul id="taskList"></ul>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
