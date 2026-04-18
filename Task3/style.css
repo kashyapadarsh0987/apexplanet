@@ -1,0 +1,135 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', Arial;
+  background: linear-gradient(to right, #e0f7fa, #f4f4f4);
+}
+
+/* Header */
+header {
+  background: teal;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+}
+
+/* Container */
+.container {
+  display: flex;
+  gap: 25px;
+  padding: 30px;
+}
+
+/* Card */
+.card {
+  flex: 1;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Progress */
+.progress {
+  height: 10px;
+  background: #ddd;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#progress-bar {
+  height: 100%;
+  width: 0%;
+  background: teal;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+/* Timer */
+#timer {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: teal;
+}
+
+/* Input */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Buttons */
+button {
+  margin-top: 10px;
+  padding: 10px;
+  background: teal;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #006666;
+}
+
+/* Answers */
+#answers button {
+  background: #f1f1f1;
+  color: black;
+}
+
+#answers button:hover {
+  background: teal;
+  color: white;
+}
+
+/* Suggestions */
+#suggestions {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  max-height: 150px;
+  overflow-y: auto;
+  margin-top: 5px;
+}
+
+.suggestion-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background: teal;
+  color: white;
+}
+
+/* Result */
+#result {
+  white-space: pre-line;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}

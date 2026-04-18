@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced Web Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>My Advanced Project 🚀</h1>
+</header>
+
+<section class="container">
+
+  <!-- QUIZ APP -->
+  <div class="card">
+    <h2>Quiz App</h2>
+
+    <!-- Progress -->
+    <div class="progress">
+      <div id="progress-bar"></div>
+    </div>
+
+    <!-- Timer -->
+    <p id="timer">⏱ Time: 10s</p>
+
+    <h3 id="question">Loading...</h3>
+    <div id="answers"></div>
+
+    <button onclick="nextQuestion()">Next</button>
+    <button onclick="restartQuiz()">Restart 🔁</button>
+
+    <p id="score"></p>
+  </div>
+
+  <!-- WEATHER APP -->
+  <div class="card">
+    <h2>Weather App</h2>
+
+    <input type="text" id="city" placeholder="Enter place or location..." oninput="getSuggestions()">
+
+    <!-- Suggestions -->
+    <div id="suggestions"></div>
+
+    <button onclick="getWeather()">Get Weather</button>
+
+    <p id="loading"></p>
+    <p id="result"></p>
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
