@@ -1,0 +1,40 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adarsh Store</title>
+<link rel="stylesheet" href="style.css">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <h2>🚀 Adarsh Store</h2>
+    <div>
+        <button onclick="toggleDarkMode()">🌙</button>
+        <button onclick="toggleCart()">🛒 <span id="cartCount">0</span></button>
+    </div>
+</header>
+
+<section class="products">
+    <h2>Our Products</h2>
+    <div id="productList" class="grid"></div>
+</section>
+
+<section id="cartSection" class="cart hidden">
+    <h2>Your Cart</h2>
+    <ul id="cartItems"></ul>
+    <h3 id="total"></h3>
+</section>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+    <div class="modal-content" id="modalContent"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

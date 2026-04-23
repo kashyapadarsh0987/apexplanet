@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: #333;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+}
+
+/* PRODUCT SECTION */
+.products {
+    padding: 30px;
+    text-align: center;
+}
+
+.products h2 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* PRODUCT CARD */
+.product-card {
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.2);
+    padding: 15px;
+    border-radius: 15px;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* BUTTON */
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* CART */
+.cart {
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    margin: 10% auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* DARK MODE */
+.dark {
+    background: #111;
+}
+
+.dark .product-card {
+    background: rgba(255,255,255,0.1);
+}

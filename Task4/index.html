@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pro Task 4 Project</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Adarsh Kashyap</h1>
+    <p>Full Stack Developer (Beginner)</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#todo">To-Do</a>
+    <a href="#products">Products</a>
+</nav>
+
+<!-- ABOUT -->
+<section id="about" class="card">
+    <h2>About Me</h2>
+    <p>I am building real-world web projects using HTML, CSS & JavaScript.</p>
+</section>
+
+<!-- TODO -->
+<section id="todo" class="card">
+    <h2>To-Do List</h2>
+
+    <input id="taskInput" placeholder="Enter task">
+    <button onclick="addTask()">Add</button>
+
+    <ul id="taskList"></ul>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products" class="card">
+    <h2>Product Section</h2>
+
+    <input type="text" id="search" placeholder="Search product..." onkeyup="searchProduct()">
+
+    <select onchange="filterProducts(this.value)">
+        <option value="all">All</option>
+        <option value="mobile">Mobile</option>
+        <option value="laptop">Laptop</option>
+    </select>
+
+    <div id="productList" class="grid"></div>
+</section>
+
+<footer>
+    <p>© 2026 Adarsh | Pro Project</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

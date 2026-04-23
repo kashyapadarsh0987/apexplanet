@@ -1,0 +1,90 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #eef2f3;
+}
+
+header {
+    background: linear-gradient(to right, teal, cyan);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background: #222;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+}
+
+.card {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+input, select {
+    padding: 10px;
+    margin: 5px;
+}
+
+button {
+    padding: 10px;
+    background: teal;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkcyan;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #f4f4f4;
+    margin: 8px 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 6px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* PRODUCT GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.product-card {
+    background: #fafafa;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #111;
+    color: white;
+}
